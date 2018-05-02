@@ -123,7 +123,7 @@ def winner
   end
 
   if won?
-    return @board[won?(@board)[0]]
+    return won?[0]
   else
     return nil
   end
