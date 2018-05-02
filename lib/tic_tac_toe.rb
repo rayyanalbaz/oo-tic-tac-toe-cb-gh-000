@@ -55,8 +55,12 @@ def current_player
 end
 
 def turn_count
-  count = []
-  @board.any? { |e| e == "X" || e == "O" }
-  count << e
+  count = 0
+  @board.each do |i|
+    if i != " "
+      count += 1
+  end
+end
+  return count
 end
 end
