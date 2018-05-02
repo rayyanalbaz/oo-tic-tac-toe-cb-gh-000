@@ -44,6 +44,7 @@ class TicTacToe
    input_to_index(input)
    if valid_move?(input)
      move(index , token)
+     display_board()
    else
      turn()
    end
