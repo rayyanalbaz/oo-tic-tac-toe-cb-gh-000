@@ -65,11 +65,10 @@ end
 end
 
 def current_player
-  turn_count
   if turn_count % 2 == 0
     return "X"
   end
-  if count % 2 != 0
+  if turn_count % 2 != 0
     return "O"
   end
 end
