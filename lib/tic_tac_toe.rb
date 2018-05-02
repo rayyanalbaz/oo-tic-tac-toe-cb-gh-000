@@ -74,10 +74,19 @@ def current_player
 end
 
 def won?
-  index1 = WIN_COMBINATIONS[[i][0]]
-  index2 = WIN_COMBINATIONS[[i][1]]
-  index3 = WIN_COMBINATIONS[[i][2]]
-
+  WIN_COMBINATIONS.each do |win_combo|
+    index1 = win_combo[0]
+    index2 = win_combo[1]
+    index3 = win_combo[2]
+    if @board[index1] == "X" && @board[index2] == "X" && @board[index3] == "X"
+      return win_combo
+    end
+    if @board[index1] == "O" && @board[index2] == "O" && @board[index3] == "O"
+      return win_combo
+    end
+  end
+  else
+return false
 end
 
 end
