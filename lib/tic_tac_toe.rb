@@ -77,6 +77,7 @@ def won?
   index1 = WIN_COMBINATIONS[[i][0]]
   index2 = WIN_COMBINATIONS[[i][1]]
   index3 = WIN_COMBINATIONS[[i][2]]
+
 end
 
 end
