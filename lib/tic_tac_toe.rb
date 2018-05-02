@@ -57,5 +57,6 @@ end
 def turn_count
   count = []
   @board.any? { |e| e == "X" || e == "O" }
-  count << e 
+  count << e
+end
 end
