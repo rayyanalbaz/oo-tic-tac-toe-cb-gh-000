@@ -51,4 +51,11 @@ class TicTacToe
   end
 end
 
+def current_player
+end
+
+def turn_count
+  count = []
+  @board.any? { |e| e == "X" || e == "O" }
+  count << e 
 end
