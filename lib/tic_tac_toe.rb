@@ -117,38 +117,16 @@ def over?
   return false
 end
 
-def winner(board)
-  if !(won?(board))
+def winner
+  if !(won?(@board))
     return nil
   end
 
-  if won?(board)
-    return board[won?(board)[0]]
+  if won?
+    return @board[won?(@board)[0]]
   else
     return nil
   end
 end
-
-def current_player(board)
-  if turn_count(board) % 2 == 1
-    return "O"
-  end
-  if turn_count(board) % 2 == 0
-    return "X"
-  end
-end
-
-def play(board)
-  until over?(board) || draw?(board)
-    turn(board)
-  end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  end
-  if draw?(board)
-    puts "Cat's Game!"
-  end
-end
-
 
 end
