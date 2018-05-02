@@ -42,7 +42,7 @@ class TicTacToe
    puts "enter a postion 1-9"
    input = gets
    input_to_index(input)
-   if valid_move?(index)
+   if valid_move?(input)
      move(index , current_player)
      display_board
    else
