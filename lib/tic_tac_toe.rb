@@ -69,8 +69,8 @@ def current_player
   if count % 2 == 0
     return "O"
   end
-  if count % 2 == 1 
-    return "X" 
+  if count % 2 == 1
+    return "X"
   end
 end
 end
