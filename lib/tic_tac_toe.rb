@@ -129,14 +129,14 @@ def winner
   end
 end
 
-def play(board)
-  until over?(board) || draw?(board)
-    turn(board)
+def play
+  until over? || draw?
+    turn
   end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
+  if won?
+    puts "Congratulations #{winner}!"
   end
-  if draw?(board)
+  if draw?
     puts "Cat's Game!"
   end
 end
